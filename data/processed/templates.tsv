@@ -1,0 +1,44 @@
+0	Agent rpc_loop - iteration:<N> started
+1	Agent rpc_loop - iteration:<N> completed. Processed ports statistics: {'regular': {'added': <N>, 'updated': <N>, 'removed': <N>}}. Elapsed:<F>
+2	GET /healthcheck => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+3	GET / => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+4	<IP> "GET /" status: <N> len: <N> microversion: - time: <F>
+5	<IP> "GET /" status: <N> len: <N> microversion: <F>
+6	Updating volume status
+7	Periodic update finished
+8	OPTIONS / => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+9	POST /v3/auth/tokens => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+10	Truncating password to algorithm specific maximum length <N> characters.
+11	POST /auth/login/ => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+12	GET /resource_providers/<UUID>/allocations => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+13	GET /v2.<N>/security-groups => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+14	GET /v3/domains/default => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+15	[-] Backup service is running normally
+16	POST /v2.<N>/networks => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+17	POST /v2.<N>/subnets => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+18	Periodic task running normally
+19	GET /v2.<N>/ports => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+20	Function 'neutron.plugins.ml2.plugin.DhcpAgentSchedulerDbMixin.remove_networks_from_down_agents' run outlasted interval by <F> sec
+21	GET /v3/limits => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+22	GET /v2.<N>/networks => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+23	GET /v2.<N>/servers/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+24	GET /v3/volumes => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+25	GET /v3 => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+26	GET /v2.<N>/security-groups?... => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+27	POST /v2.<N>/servers => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+28	The python binding code in neutronclient is deprecated in favor of OpenstackSDK, please use that as this will be removed in a future release.
+29	POST /v2.<N>/ports => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+30	PUT /v2.<N>/ports/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+31	PUT /allocations/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+32	POST /v2.<N>/os-server-external-events => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+33	GET /v3/volumes/detail => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+34	GET /v3/volumes/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+35	GET /v2.<N>/ports?device_owner=network:dhcp => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+36	[-] Engine service heartbeat
+37	GET /v3/users/<HEX>/projects => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+38	POST /v3/volumes => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+39	<IP> "POST /v3/volumes" status: <N> len: <N>
+40	GET /v2.<N>/ports/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+41	GET /v2.<N>/extensions => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+42	DELETE /v2.<N>/servers/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)
+43	DELETE /v3/volumes/<UUID> => generated <N> bytes in <N> msecs (HTTP/<V> <N>) <N> headers in <N> bytes (<N> switches on core <N>)

@@ -1,0 +1,37 @@
+
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+build/
+dist/
+
+# Virtualenv
+venv/
+.venv/
+env/
+
+# Données
+data/raw/*.json
+data/processed/*.pkl.gz
+data/processed/*.parquet
+data/features/*.pkl.gz
+data/features/*.parquet
+data/test_anomalies/test_day.json
+data/test_anomalies/*.pkl.gz
+data/models/*.joblib
+data/alerts/*.json
+data/llm_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+*.log

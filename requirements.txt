@@ -1,0 +1,17 @@
+# Core — required
+pandas>=2.1.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+click>=8.1.0
+pyyaml>=6.0
+matplotlib>=3.8.0
+joblib>=1.3.0
+
+# Recommended 
+pyarrow>=15.0.0      # Parquet format. Falls back to pickle.gz
+tqdm>=4.66.0         # Progress bars. Falls back to a no-op stub
+
+# Dashboard (Phase 8)
+streamlit>=1.30.0
+
+

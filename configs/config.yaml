@@ -1,0 +1,157 @@
+# Configuration centrale du système de détection d'anomalies
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  features_data: "data/features"
+  models_data: "data/models"
+
+# Mapping programname -> service_group
+# Les services uWSGI sont listés dans leur groupe métier et dans api_gateway
+service_groups:
+  compute:
+    - nova-api
+    - nova-api-uwsgi
+    - nova-compute
+    - nova-conductor
+    - nova-scheduler
+    - nova-metadata
+    - nova-metadata-uwsgi
+    - nova-novncproxy
+    - libvirt
+    - privsep-helper
+  network:
+    - neutron-server
+    - neutron-server-uwsgi
+    - neutron-openvswitch-agent
+    - neutron-l3-agent
+    - neutron-dhcp-agent
+    - neutron-metadata-agent
+    - neutron-rpc-server
+    - neutron-periodic-workers
+    - openvswitch
+    - openvswitchdb
+  storage:
+    - cinder-api
+    - cinder-api-uwsgi
+    - cinder-volume
+    - cinder-scheduler
+    - cinder-backup
+    - glance-api
+    - glance-api-uwsgi
+  identity:
+    - keystone
+    - keystone-uwsgi
+  orchestration:
+    - heat-engine
+    - heat-api
+    - heat-api-uwsgi
+    - heat-api-cfn
+    - heat-api-cfn-uwsgi
+  placement:
+    - placement-api
+    - placement-api-uwsgi
+  ui:
+    - horizon-uwsgi
+  infra:
+    - rabbit
+    - mariadb
+    - fluent
+  api_gateway:
+    - cinder-api-uwsgi
+    - keystone-uwsgi
+    - neutron-server-uwsgi
+    - glance-api-uwsgi
+    - heat-api-uwsgi
+    - heat-api-cfn-uwsgi
+    - placement-api-uwsgi
+    - nova-api-uwsgi
+    - nova-metadata-uwsgi
+    - horizon-uwsgi
+
+# Mapping log_level -> severity numérique
+severity_map:
+  DEBUG: 0
+  INFO: 1
+  Note: 1
+  notice: 2
+  NOTICE: 2
+  WARNING: 3
+  WARN: 3
+  warning: 3
+  ERROR: 4
+  error: 4
+  CRITICAL: 5
+  critical: 5
+
+# Fenêtrage temporel
+windowing:
+  primary:
+    window_size_seconds: 300   # 5 minutes
+    step_seconds: 60           # step 1 minute (sliding)
+  long:
+    window_size_seconds: 1800  # 30 minutes
+    step_seconds: 300          # step 5 minutes
+
+# Modèles Isolation Forest
+models:
+  isolation_forest:
+    n_estimators: 300
+    max_samples: 256
+    contamination: 0.005
+    max_features: 0.5  
+    bootstrap: false
+    n_jobs: -1
+    random_state: 42
+  threshold_percentile: 95.0
+
+# Split train/val/test (par date)
+data_split:
+  train_dates:
+    - "2026-04-27"
+    - "2026-04-28"
+    - "2026-04-29"
+    - "2026-04-30"
+    - "2026-05-01"
+  val_dates:
+    - "2026-05-02"
+  holdout_dates:
+    - "2026-05-03"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name} | {message}"
+
+# Couche LLM (Phase 6)
+llm:
+  enabled: true
+  primary_provider: "gemini"
+  primary_model: "gemini-2.0-flash"
+  fallback_provider: "groq"
+  fallback_model: "llama-3.3-70b-versatile"
+  max_tokens_response: 1500
+  temperature: 0.1
+  timeout_seconds: 30
+  cache_enabled: true
+  cache_ttl_hours: 24
+
+# Worker temps réel (Phase 7)
+realtime:
+  enabled: true
+  opensearch:
+    host: "192.168.91.128"     # Adapter à l'IP de la VM OpenStack
+    port: 9200
+    scheme: "http"
+    username: null             # Priorité à OPENSEARCH_USER dans .env
+    password: null             # Priorité à OPENSEARCH_PASSWORD dans .env
+    verify_certs: false
+    index_pattern: "flog-*"
+    timeout_seconds: 30
+  poll_interval_seconds: 30
+  lookback_window_minutes: 5
+  max_logs_per_iter: 10000
+  alerts_output: "data/alerts/alerts.jsonl"
+  enriched_output: "data/alerts/alerts_enriched.jsonl"
+  state_file: "data/realtime_state.json"
+  llm_min_severity: "high"

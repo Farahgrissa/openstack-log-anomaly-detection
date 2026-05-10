@@ -1,0 +1,530 @@
+{
+  "global": {
+    "name": "global",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "threshold": -0.09503005776865592,
+    "auc_roc": 0.9502080613577022,
+    "auc_pr": 0.8642980517015674,
+    "precision": 0.9090909090909091,
+    "recall": 0.46875,
+    "f1": 0.6185567010309279,
+    "n_predicted_anomaly": 66,
+    "tn": 377,
+    "fp": 6,
+    "fn": 68,
+    "tp": 60,
+    "false_positive_rate": 0.015665796344647518,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0,
+        "score_p50": -0.17142851104865525,
+        "score_p95": -0.1378978486147578
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 9,
+        "recall": 0.75,
+        "score_p50": -0.06553142115526034,
+        "score_p95": -0.04960734665373529
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875,
+        "score_p50": -0.01185935318112219,
+        "score_p95": 0.007587404045463694
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 14,
+        "recall": 0.875,
+        "score_p50": -0.056870316022393175,
+        "score_p95": -0.04495110048134565
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111,
+        "score_p50": -0.13029018215327293,
+        "score_p95": -0.08782326541394535
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0,
+        "score_p50": -0.04426746685650845,
+        "score_p95": -0.023199455034775256
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 19,
+        "recall": 0.296875,
+        "score_p50": -0.11746356658398166,
+        "score_p95": -0.05510440173391725
+      }
+    }
+  },
+  "group_compute": {
+    "name": "group_compute",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "threshold": -0.09008360727616838,
+    "auc_roc": 0.9454348890339426,
+    "auc_pr": 0.8267987536587932,
+    "precision": 0.8852459016393442,
+    "recall": 0.421875,
+    "f1": 0.5714285714285714,
+    "n_predicted_anomaly": 61,
+    "tn": 376,
+    "fp": 7,
+    "fn": 74,
+    "tp": 54,
+    "false_positive_rate": 0.018276762402088774,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0,
+        "score_p50": -0.18690554644967866,
+        "score_p95": -0.15717443540985204
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666,
+        "score_p50": -0.05705818475965835,
+        "score_p95": -0.036328114252110064
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875,
+        "score_p50": -0.010125819842775774,
+        "score_p95": -0.006571151508367986
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 3,
+        "recall": 0.1875,
+        "score_p50": -0.10470480700796503,
+        "score_p95": -0.08472567829438732
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111,
+        "score_p50": -0.1349050764545629,
+        "score_p95": -0.07990628752663058
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0,
+        "score_p50": -0.036572912884753894,
+        "score_p95": -0.025873653625579935
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 22,
+        "recall": 0.34375,
+        "score_p50": -0.11970223500682073,
+        "score_p95": -0.04115205816553766
+      }
+    }
+  },
+  "group_identity": {
+    "name": "group_identity",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "threshold": -0.09434329601349051,
+    "auc_roc": 0.9421915796344646,
+    "auc_pr": 0.8305895718862097,
+    "precision": 0.8888888888888888,
+    "recall": 0.375,
+    "f1": 0.5274725274725275,
+    "n_predicted_anomaly": 54,
+    "tn": 377,
+    "fp": 6,
+    "fn": 80,
+    "tp": 48,
+    "false_positive_rate": 0.015665796344647518,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0,
+        "score_p50": -0.19414189591357955,
+        "score_p95": -0.15832260169296827
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666,
+        "score_p50": -0.04710400514072055,
+        "score_p95": -0.022823380943007704
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875,
+        "score_p50": -0.003876163101223684,
+        "score_p95": 0.0037954808583716354
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 2,
+        "recall": 0.125,
+        "score_p50": -0.11048036191975008,
+        "score_p95": -0.0921392840228645
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111,
+        "score_p50": -0.1385249329780197,
+        "score_p95": -0.08505383918923867
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0,
+        "score_p50": -0.030471359479089244,
+        "score_p95": -0.016557732024412478
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 17,
+        "recall": 0.265625,
+        "score_p50": -0.13199790995369537,
+        "score_p95": -0.053289605790987855
+      }
+    }
+  },
+  "group_network": {
+    "name": "group_network",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "threshold": -0.08944994970507325,
+    "auc_roc": 0.9382751305483028,
+    "auc_pr": 0.813351401440752,
+    "precision": 0.8867924528301887,
+    "recall": 0.3671875,
+    "f1": 0.5193370165745856,
+    "n_predicted_anomaly": 53,
+    "tn": 377,
+    "fp": 6,
+    "fn": 81,
+    "tp": 47,
+    "false_positive_rate": 0.015665796344647518,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0,
+        "score_p50": -0.18302665689570569,
+        "score_p95": -0.1554528490972273
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666,
+        "score_p50": -0.05693455409984799,
+        "score_p95": -0.036271790245572096
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875,
+        "score_p50": -0.007995469178814163,
+        "score_p95": 0.0006375537135099137
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 4,
+        "recall": 0.25,
+        "score_p50": -0.09850250703317076,
+        "score_p95": -0.07702080571999873
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111,
+        "score_p50": -0.12542073228012746,
+        "score_p95": -0.07347216117536659
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0,
+        "score_p50": -0.04019196089221316,
+        "score_p95": -0.023380018086021
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 14,
+        "recall": 0.21875,
+        "score_p50": -0.12474349396188422,
+        "score_p95": -0.050273325877861416
+      }
+    }
+  },
+  "group_orchestration": {
+    "name": "group_orchestration",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "threshold": -0.08878319307243437,
+    "auc_roc": 0.9431298955613577,
+    "auc_pr": 0.8219279439388577,
+    "precision": 0.8833333333333333,
+    "recall": 0.4140625,
+    "f1": 0.5638297872340425,
+    "n_predicted_anomaly": 60,
+    "tn": 376,
+    "fp": 7,
+    "fn": 75,
+    "tp": 53,
+    "false_positive_rate": 0.018276762402088774,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0,
+        "score_p50": -0.18625100340760659,
+        "score_p95": -0.1558475435437409
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666,
+        "score_p50": -0.05622140154899019,
+        "score_p95": -0.03443055498506208
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875,
+        "score_p50": -0.010161585780394666,
+        "score_p95": -0.003064863860756303
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 2,
+        "recall": 0.125,
+        "score_p50": -0.1067222353150285,
+        "score_p95": -0.0862928106659466
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111,
+        "score_p50": -0.1318362340557816,
+        "score_p95": -0.07874254817531864
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0,
+        "score_p50": -0.030518673257526774,
+        "score_p95": -0.019306463534362765
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 22,
+        "recall": 0.34375,
+        "score_p50": -0.11880418670910864,
+        "score_p95": -0.041829428241536015
+      }
+    }
+  },
+  "group_storage": {
+    "name": "group_storage",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "threshold": -0.09100260603253357,
+    "auc_roc": 0.9483314295039165,
+    "auc_pr": 0.8294160615128263,
+    "precision": 0.8771929824561403,
+    "recall": 0.390625,
+    "f1": 0.5405405405405406,
+    "n_predicted_anomaly": 57,
+    "tn": 376,
+    "fp": 7,
+    "fn": 78,
+    "tp": 50,
+    "false_positive_rate": 0.018276762402088774,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0,
+        "score_p50": -0.17274125764576936,
+        "score_p95": -0.1390503561696248
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666,
+        "score_p50": -0.05926986981108184,
+        "score_p95": -0.03922064541980234
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875,
+        "score_p50": -0.010624052092867597,
+        "score_p95": -0.0047808493073365444
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 2,
+        "recall": 0.125,
+        "score_p50": -0.10343851432769796,
+        "score_p95": -0.08324161102985694
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111,
+        "score_p50": -0.1298622193142595,
+        "score_p95": -0.07842356252060172
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0,
+        "score_p50": -0.03846502275807734,
+        "score_p95": -0.02562972268436412
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 19,
+        "recall": 0.296875,
+        "score_p50": -0.12051790078810545,
+        "score_p95": -0.04409512294788659
+      }
+    }
+  },
+  "ensemble_max": {
+    "name": "ensemble_max",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "auc_roc": 0.9488515828981723,
+    "auc_pr": 0.8392599893575622,
+    "precision": 0.9041095890410958,
+    "recall": 0.515625,
+    "f1": 0.6567164179104478,
+    "n_predicted_anomaly": 73,
+    "tn": 376,
+    "fp": 7,
+    "fn": 62,
+    "tp": 66,
+    "false_positive_rate": 0.018276762402088774,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 7,
+        "recall": 0.875
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 14,
+        "recall": 0.875
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 1,
+        "recall": 0.1111111111111111
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 23,
+        "recall": 0.359375
+      }
+    }
+  },
+  "hybrid": {
+    "name": "hybrid",
+    "n_total": 511,
+    "n_anomaly": 128,
+    "n_normal": 383,
+    "auc_roc": 0.9539205287206265,
+    "auc_pr": 0.8737783370293023,
+    "precision": 0.8468468468468469,
+    "recall": 0.734375,
+    "f1": 0.7866108786610879,
+    "n_predicted_anomaly": 111,
+    "tn": 366,
+    "fp": 17,
+    "fn": 34,
+    "tp": 94,
+    "false_positive_rate": 0.044386422976501305,
+    "by_type": {
+      "error_burst_cinder": {
+        "n_windows": 9,
+        "n_detected": 0,
+        "recall": 0.0
+      },
+      "latency_spike_keystone": {
+        "n_windows": 12,
+        "n_detected": 11,
+        "recall": 0.9166666666666666
+      },
+      "auth_failures_burst": {
+        "n_windows": 8,
+        "n_detected": 8,
+        "recall": 1.0
+      },
+      "service_silence_neutron_ovs": {
+        "n_windows": 16,
+        "n_detected": 14,
+        "recall": 0.875
+      },
+      "new_error_templates": {
+        "n_windows": 9,
+        "n_detected": 8,
+        "recall": 0.8888888888888888
+      },
+      "traffic_spike_ddos": {
+        "n_windows": 10,
+        "n_detected": 10,
+        "recall": 1.0
+      },
+      "latency_drift_nova": {
+        "n_windows": 64,
+        "n_detected": 43,
+        "recall": 0.671875
+      }
+    },
+    "decision_sources": {
+      "none": 400,
+      "ml_only": 86,
+      "both": 20,
+      "rules_only": 5
+    }
+  }
+}
